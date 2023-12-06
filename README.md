@@ -1,8 +1,8 @@
 **Source code includes:-**
 
-Utility - ConnectToGSheet file
+ConnectToGSheet file - Utility
 
-Demo code to Read/Write data -  GoogleSheetsTest file
+GoogleSheetsTest file- Demo code to Read/Write data
 
 **Steps to Implement:-**
 
