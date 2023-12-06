@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.google.api.services.sheets.v4.model.ValueRange;
 
-import CommonTexts.ConstantLiterals;
+import CommonTexts.Constant;
 import utility.ConnectToGSheet;
 
 
@@ -19,8 +19,8 @@ public class GoogleSheetsTest{
 	}
 
 	public void readData() throws Exception {
-		ValueRange response = ConnectToGSheet.initGoogleSheet(ConstantLiterals.GSheetTest,
-				ConstantLiterals.CalculationSheetRange, ConstantLiterals.MajorDimension_Row);
+		ValueRange response = ConnectToGSheet.initGoogleSheet(Constant.GSheetTest,
+				Constant.CalculationSheetRange, Constant.MajorDimension_Row);
 
 		sheetRows = ConnectToGSheet.getRows(response);
 		System.out.println(sheetRows.toString());
@@ -39,7 +39,7 @@ public class GoogleSheetsTest{
 			
 		}
 		
-		ConnectToGSheet.updateDataRowsToSheet(ConstantLiterals.GSheetTest, ConstantLiterals.CalculationSheetRange, sheetRows, "USER_ENTERED");
+		ConnectToGSheet.updateDataRowsToSheet(Constant.GSheetTest, Constant.CalculationSheetRange, sheetRows, "USER_ENTERED");
 		
 	}
 	
