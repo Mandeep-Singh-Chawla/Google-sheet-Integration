@@ -35,11 +35,11 @@ import com.google.api.services.sheets.v4.model.ClearValuesResponse;
 import com.google.api.services.sheets.v4.model.UpdateValuesResponse;
 import com.google.api.services.sheets.v4.model.ValueRange;
 
-import CommonTexts.ConstantLiterals;
+import CommonTexts.Constant;
 
 public final class ConnectToGSheet {
 
-	private static final java.io.File DATA_STORE_DIR = new java.io.File(System.getProperty("user.home"), ConstantLiterals.GSHEETCREDENTIALSPATH);
+	private static final java.io.File DATA_STORE_DIR = new java.io.File(System.getProperty("user.home"), Constant.GSHEETCREDENTIALSPATH);
 	private static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
 	private static final List<String> SCOPES = Arrays.asList(SheetsScopes.SPREADSHEETS);
 	private static FileDataStoreFactory DATA_STORE_FACTORY;
@@ -85,7 +85,7 @@ public final class ConnectToGSheet {
 		Credential credential;
 		credential = authorize();
 		return new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, credential)
-				.setApplicationName(ConstantLiterals.APPLICATION_NAME)
+				.setApplicationName(Constant.APPLICATION_NAME)
 				.build();
 	}
 
