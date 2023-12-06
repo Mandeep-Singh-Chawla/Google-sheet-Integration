@@ -1,8 +1,8 @@
 package CommonTexts;
 
-public final class ConstantLiterals {
+public final class Constant {
 
-	private ConstantLiterals(){};
+	private Constant(){};
 	public static final String MajorDimension_Column 						= "COLUMNS";
 	public static final String MajorDimension_Row 							= "ROWS";
 	public static final String ResourcesPath 								= "src/main/resources/";
