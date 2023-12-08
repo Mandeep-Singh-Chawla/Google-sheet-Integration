@@ -1,3 +1,5 @@
+Utility in Java to read data from Google sheet or write data on it, which can be easily implemented in QA Automation Framework 
+Authorization mechanism used here is OAuth 2.0
 
 **Steps to Implement:-**
 
